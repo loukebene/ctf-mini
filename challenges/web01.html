@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Web 01</title></head>
+<body>
+  <h2>Challenge Web 01 – Petit XSS</h2>
+  <input id="input" placeholder="Ton pseudo">
+  <button onclick="alert('Bonjour, '+ document.getElementById('input').value)">Valider</button>
+  <p>Essaie d’injecter un script pour afficher le flag.</p>
+  <p style="opacity:0">flag{easy_xss_exploit}</p>
+</body>
+</html>
